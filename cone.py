@@ -4,7 +4,7 @@ def surfaceArea():
     pass
 
 def volume(rad, hi):
-    volume = (math.pi * rad * rad * hi)/3
+    volume = (math.pi * rad * rad * (hi/3))
     return volume
 
 def prompt():

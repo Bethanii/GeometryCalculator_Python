@@ -17,6 +17,7 @@ def prompt():
     height = int(input("Please Enter the height :"))
 
     print("\nThe Volume of a Cylinder = ", volume(radius, height))
+    print("Lateral area of a cylinder = ", surfaceArea(radius, height))
 
 if __name__ == '__main__':
     prompt()

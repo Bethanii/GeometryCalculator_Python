@@ -1,10 +1,9 @@
-#change formulas
 import math
 
 def surfaceArea():
     pass
 
-def volume(rad, hi):
+def area(rad, hi):
     volume = math.pi * rad * rad * hi
     return volume
 
@@ -16,7 +15,7 @@ def prompt():
     radius = int(input("Please Enter the radius :"))
     height = int(input("Please Enter the height :"))
 
-    print("\nThe Area of a Triangle = ", volume(radius, height))
+    print("\nThe Area of a Triangle = ", area(radius, height))
 
 if __name__ == '__main__':
     prompt()
