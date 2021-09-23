@@ -1,12 +1,21 @@
 # inspiration code for Python Unit Testing Project
 import math
 
-def surfaceArea():
-    pass
+def surfaceArea(rad, hi):
+    surfaceArea = (2 * math.pi * rad * hi) + 2 * math.pi * rad * rad
+    return surfaceArea
 
 def volume(rad, hi):
     volume = math.pi * rad * rad * hi
     return volume
+
+def latSurfaceArea(rad,hi):
+    latSurfaceArea = 2 * math.pi * rad * hi
+    return latSurfaceArea
+
+def topOrBottom(rad):
+    topOrBottom = math.pi * rad * rad
+    return topOrBottom
 
 def prompt():
     print()
@@ -16,8 +25,10 @@ def prompt():
     radius = int(input("Please Enter the radius :"))
     height = int(input("Please Enter the height :"))
 
-    print("\nThe Volume of a Cylinder = ", volume(radius, height))
-    print("Lateral area of a cylinder = ", surfaceArea(radius, height))
+    print("\nThe Surface Area of a Cylinder: ", surfaceArea(radius, height))
+    print("The Volume of a Cylinder = ", volume(radius, height))
+    print("Lateral Surface Area of a Cylinder = ", latSurfaceArea(radius, height))
+    print("Top OR Bottom Surface Area of a Cylinder: ", topOrBottom(radius),"\n")
 
 if __name__ == '__main__':
     prompt()
