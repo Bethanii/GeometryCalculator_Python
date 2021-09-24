@@ -1,19 +1,19 @@
 import math
 
 def surfaceArea(rad, hi):
-    surfaceArea = math.pi * rad * (rad + math.sqrt((hi * hi) + (rad * rad)))
+    surfaceArea = round(math.pi * rad * (rad + math.sqrt((hi * hi) + (rad * rad))), 2)
     return surfaceArea
 
 def volume(rad, hi):
-    volume = (math.pi * rad * rad * (hi/3))
+    volume = round((math.pi * rad * rad * (hi/3)), 2)
     return volume
 
-def latSurfaceArea(rad,hi):
-    latSurfaceArea = math.pi * rad * hi
+def latSurfaceArea(rad, hi):
+    latSurfaceArea = round(math.pi * rad * slant(rad, hi), 2)
     return latSurfaceArea
 
 def slant(rad, hi):
-    slant = math.sqrt(rad * rad + hi * hi)
+    slant = round(math.sqrt(rad * rad + hi * hi), 2)
     return slant
 
 def prompt():

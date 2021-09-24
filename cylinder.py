@@ -2,28 +2,28 @@
 import math
 
 def surfaceArea(rad, hi):
-    surfaceArea = (2 * math.pi * rad * hi) + 2 * math.pi * rad * rad
+    surfaceArea = round((2 * math.pi * rad * hi) + 2 * math.pi * rad * rad, 2)
     return surfaceArea
 
 def volume(rad, hi):
     volume = math.pi * rad * rad * hi
-    return volume
+    return round(volume, 2) 
 
 def latSurfaceArea(rad,hi):
     latSurfaceArea = 2 * math.pi * rad * hi
-    return latSurfaceArea
+    return round(latSurfaceArea, 2)
 
 def topOrBottom(rad):
     topOrBottom = math.pi * rad * rad
-    return topOrBottom
+    return round(topOrBottom, 2)
 
 def prompt():
     print()
     print("----------------------------------------------------------")
     print("PYTHON PROGRAM TO FIND VOLUME & SURFACE AREA OF A CYLINDER")
     print("----------------------------------------------------------")
-    radius = int(input("Please Enter the radius :"))
-    height = int(input("Please Enter the height :"))
+    radius = int(input("Please Enter the radius: "))
+    height = int(input("Please Enter the height: "))
 
     print("\nThe Surface Area of a Cylinder: ", surfaceArea(radius, height))
     print("The Volume of a Cylinder = ", volume(radius, height))

@@ -1,11 +1,11 @@
 import math
 
 def surfaceArea(rad):
-    surfaceArea = (math.pi * 4) * rad * rad
+    surfaceArea = round((math.pi * 4) * (rad * rad), 2)
     return surfaceArea
 
 def volume(rad):
-    volume = (math.pi * 4/3) * (rad * rad * rad)
+    volume = round((math.pi * 4/3) * (rad * rad * rad), 2)
     return volume
 
 def prompt():

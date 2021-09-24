@@ -4,16 +4,27 @@ import cylinder
 class cylinderTest(unittest.TestCase):
 
     #passing tests
-    def test_volume1(self):
-        assert(cylinder.volume(10,32) == 10053.096491487338)
 
-    def test_volume2(self):
-        assert(cylinder.volume(10,100) == 31415.926535897932)
+    #Surface Area Tests
+    def test_surfaceArea1(self):
+        assert(cylinder.surfaceArea(5, 10) == 471.24)
+
+    #Volume Tests    
+    def test_volume1(self):
+        assert(cylinder.volume(5, 10) == 785.4)
+
+    #Lateral Surface Area tests
+    def test_latSurfaceArea1(self):
+        assert(cylinder.latSurfaceArea(5, 10) == 314.16)
+
+    #Top and bottom area tests
+    def test_topOrBottom1(self):
+        assert(cylinder.topOrBottom(5) == 78.54)
+        
 
     #failing test
     def test_volume3(self):
-        assert(cylinder.volume(101000) == 0)
-
+       assert(cylinder.volume(5, 10) == 0)
 
 if __name__ == '__main__':
     unittest.main()
