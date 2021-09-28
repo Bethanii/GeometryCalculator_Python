@@ -19,8 +19,7 @@ class cylinderTest(unittest.TestCase):
 
     #Top and bottom area tests
     def test_topOrBottom1(self):
-        assert(cylinder.topOrBottom(5) == 78.54)
-        
+        assert(cylinder.topOrBottom(5) == 78.54)   
 
     #failing test
     def test_volume3(self):

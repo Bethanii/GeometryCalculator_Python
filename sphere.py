@@ -15,8 +15,9 @@ def prompt():
     print("------------------------------------------------------------")
     radius = int(input("Please Enter the radius: "))
 
-    print("\nThe Volume of a Sphere = ", volume(radius))
-    print("The Surface Area of a Sphere = ", surfaceArea(radius), "\n")
+    print("\nThe Surface Area of a Sphere = ", surfaceArea(radius))
+    print("The Volume of a Sphere = ", volume(radius), "\n")
+    
 
 if __name__ == '__main__':
     prompt()
