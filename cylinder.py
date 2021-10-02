@@ -1,5 +1,7 @@
-# inspiration code for Python Unit Testing Project
 import math
+
+def selection():
+    return 2
 
 def surfaceArea(rad, hi):
     surfaceArea = round((2 * math.pi * rad * hi) + 2 * math.pi * rad * rad, 2)

@@ -1,5 +1,8 @@
 import math
 
+def selection():
+    return 6
+
 def area(baseA, baseB, hi):
     area =  round((baseA + baseB)/2 * hi, 2)
     return area

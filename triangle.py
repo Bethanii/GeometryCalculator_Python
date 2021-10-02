@@ -1,5 +1,8 @@
 import math
 
+def selection():
+    return 5
+
 def perimeter(sideA, sideB, sideC):
     perimeter = round(sideA + sideB + sideC, 2)
     return perimeter

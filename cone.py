@@ -1,5 +1,8 @@
 import math
 
+def selection():
+    return 3
+
 def surfaceArea(rad, hi):
     surfaceArea = round(math.pi * rad * (rad + math.sqrt((hi * hi) + (rad * rad))), 2)
     return surfaceArea

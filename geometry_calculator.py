@@ -1,8 +1,9 @@
 import sphere, cylinder, cone, cube, triangle, trapezoid, cuboid, equilateralTriangle
-from flask import Flask
+
+def userSelection(selection):
+    return selection
 
 def main():
-
     while True:
         #Main menu output
         print("Welcome to the my Geometry Program")
@@ -47,4 +48,5 @@ def main():
             equilateralTriangle.prompt()
             break
 
-main()
+if __name__ == '__main__':
+    main()

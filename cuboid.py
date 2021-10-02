@@ -1,5 +1,8 @@
 import math
 
+def selection():
+    return 7
+
 def surfaceArea(lth, wi, hi):
     surfaceArea = round((2 * lth * wi) + (2 * lth * hi) + (2 * hi * wi), 2)
     return surfaceArea

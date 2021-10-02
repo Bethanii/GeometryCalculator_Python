@@ -1,6 +1,9 @@
 #change formula
 import math
 
+def selection():
+    return 4
+
 def surfaceArea(side):
     surfaceArea = round(6 * side * side, 2)
     return surfaceArea

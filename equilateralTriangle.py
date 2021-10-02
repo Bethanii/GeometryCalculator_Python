@@ -1,5 +1,8 @@
 import math
 
+def selection():
+    return 8
+
 def area(lth):
     area =  round((math.sqrt(3)/4) * lth * lth, 2)
     return area
