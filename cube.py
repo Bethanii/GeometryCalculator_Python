@@ -5,15 +5,15 @@ def selection():
     return 4
 
 def surfaceArea(side):
-    surfaceArea = round(6 * side * side, 2)
+    surfaceArea = round(6 * side**2, 2)
     return surfaceArea
 
 def volume(side):
-    volume = round(side * side * side, 2)
+    volume = round(side**3, 2)
     return volume
 
 def latSurfaceArea(side):
-    latSurfaceArea = round(4 * side * side, 2)
+    latSurfaceArea = round(4 * side**2, 2)
     return latSurfaceArea 
 
 def prompt():

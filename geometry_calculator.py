@@ -1,5 +1,6 @@
 import sphere, cylinder, cone, cube, triangle, trapezoid, cuboid, equilateralTriangle
 
+#setting user selection in main program
 def userSelection(selection):
     return selection
 

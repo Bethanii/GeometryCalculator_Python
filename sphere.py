@@ -1,14 +1,15 @@
 import math
 
+#setting sphere as selection 1
 def selection():
     return 1
 
 def surfaceArea(rad):
-    surfaceArea = round((math.pi * 4) * (rad * rad), 2)
+    surfaceArea = round((math.pi * 4) * (rad**2), 2)
     return surfaceArea
 
 def volume(rad):
-    volume = round((math.pi * 4/3) * (rad * rad * rad), 2)
+    volume = round((math.pi * 4/3) * (rad**3), 2)
     return volume
 
 def prompt():

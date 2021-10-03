@@ -4,11 +4,11 @@ def selection():
     return 3
 
 def surfaceArea(rad, hi):
-    surfaceArea = round(math.pi * rad * (rad + math.sqrt((hi * hi) + (rad * rad))), 2)
+    surfaceArea = round(math.pi * rad * (rad + math.sqrt((hi * hi) + (rad**2))), 2)
     return surfaceArea
 
 def volume(rad, hi):
-    volume = round((math.pi * rad * rad * (hi/3)), 2)
+    volume = round((math.pi * rad**2 * (hi/3)), 2)
     return volume
 
 def latSurfaceArea(rad, hi):
@@ -16,7 +16,7 @@ def latSurfaceArea(rad, hi):
     return latSurfaceArea
 
 def slant(rad, hi):
-    slant = round(math.sqrt(rad * rad + hi * hi), 2)
+    slant = round(math.sqrt(rad**2 + hi * hi), 2)
     return slant
 
 def prompt():
