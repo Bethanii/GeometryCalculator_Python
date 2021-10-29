@@ -3,8 +3,6 @@ import cone
 
 class coneTest(unittest.TestCase):
 
-    #passing tests
-
     #Slant Tests
     def test_slant1(self):
         assert(cone.slant(5, 10) == 11.18)
@@ -20,10 +18,6 @@ class coneTest(unittest.TestCase):
     #Lateral Surface Area Tests
     def test_latSurfaceArea1(self):
         assert(cone.latSurfaceArea(5, 10) == 175.62)
-        
-    #failing test
-    def test_volumeFail(self):
-       assert(cone.volume(5, 10) == 0)
 
 if __name__ == '__main__':
     unittest.main()

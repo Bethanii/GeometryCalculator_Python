@@ -17,9 +17,5 @@ class cuboidTest(unittest.TestCase):
     def test_latSurfaceArea(self):
         assert(cuboid.latSurfaceArea(15, 10, 5) == 250)
         
-    #failing test
-    def test_volumeFail(self):
-       assert(cuboid.volume(15, 10, 5) == 0)
-
 if __name__ == '__main__':
     unittest.main()

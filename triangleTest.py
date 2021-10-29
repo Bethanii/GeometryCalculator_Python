@@ -16,10 +16,6 @@ class cuboidTest(unittest.TestCase):
     #Area Tests
     def test_Area1(self):
         assert(triangle.area(7, 5, 6) == 14.7)
-        
-    #failing test
-    def test_areaFail(self):
-       assert(triangle.area(7, 5, 6) == 0)
 
 if __name__ == '__main__':
     unittest.main()

@@ -12,10 +12,6 @@ class trapezoidTest(unittest.TestCase):
     #Median Tests    
     def test_Median1(self):
         assert(trapezoid.median(5, 10) == 15)
-        
-    #failing test
-    def test_volumeFail(self):
-       assert(trapezoid.area(5, 10, 15) == 0)
 
 if __name__ == '__main__':
     unittest.main()

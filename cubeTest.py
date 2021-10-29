@@ -16,10 +16,6 @@ class coneTest(unittest.TestCase):
     #Lateral Surface Area Tests
     def test_latSurfaceArea1(self):
         assert(cube.latSurfaceArea(5) == 100)
-        
-    #failing test
-    def test_volumeFail(self):
-       assert(cube.volume(5) == 0)
 
 if __name__ == '__main__':
     unittest.main()

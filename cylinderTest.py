@@ -21,7 +21,5 @@ class cylinderTest(unittest.TestCase):
     def test_topOrBottom1(self):
         assert(cylinder.topOrBottom(5) == 78.54)   
 
-    
-
 if __name__ == '__main__':
     unittest.main()

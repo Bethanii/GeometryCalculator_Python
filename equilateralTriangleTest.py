@@ -20,10 +20,6 @@ class equilateralTriangleTest(unittest.TestCase):
     #Altitude Tests
     def test_Altitude1(self):
         assert(equilateralTriangle.altitude(5) == 4.33) 
-        
-    #failing test
-    def test_areaFail(self):
-       assert(equilateralTriangle.area(5) == 0)
 
 if __name__ == '__main__':
     unittest.main()
