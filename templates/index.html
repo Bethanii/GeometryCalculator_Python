@@ -1,15 +1,26 @@
-<!DOCTYPE html>
 <html>
+<head>
+    <title>Geometry Web App</title>
+</head>
+<body>
+    <h3>SENG3110 Geometry Calculator</h3>
+    <h4>Please Select From the Following: </h4>
 
-    <body>
-        <h1>My Personal Website</h1>
-
-        <p>Hi, this is my personal website.</p>
-
-        <form action="/sayHello" method="post">
-            <button name="forwardBtn" type="submit">Forward</button>
-        </form>
-        
-    </body>
-
+    <form action="{{ url_for("mainForm")}}" method="post">
+        <!-- SPHERE -->
+        <input type="radio" id="sphere" name="sphere">
+        <label for="sphere">Sphere</label></br>
+        <!-- CYLINDER -->
+        <input type="radio" id="cylinder" name="cylinder">
+        <label for="cylinder">Cylinder</label></br>
+        <!-- CONE -->
+        <input type="radio" id="cone" name="cone">
+        <label for="cone">Cone</label></br>
+        <!-- CUBOID -->
+        <input type="radio" id="cone" name="cuboid">
+        <label for="cuboid">Cuboid</label></br>
+        <p></p>
+        <button type="submit">Make Selection</button>
+    </form>
+</body>
 </html>

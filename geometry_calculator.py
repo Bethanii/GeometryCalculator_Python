@@ -4,6 +4,7 @@ import sphere, cylinder, cone, cube, triangle, trapezoid, cuboid, equilateralTri
 def userSelection(selection):
     return selection
 
+#main output loop
 def main():
     while True:
         #Main menu output
