@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<body>
+    <form action="{{ url_for("coneForm")}}" method="post">
+        <label for="radius">Please enter the cone radius:</label>
+        <input type="text" id="radius" name="rad" placeholder="radius">
+        </br>
+        <label for="height">Please enter the cone height:</label>
+        <input type="text" id="height" name="hgt" placeholder="height">
+        <p></p>
+        <button type="submit">Calculate Slant, Volume, Surface Area, and Lateral Surface Area</button>
+    </form>
+</body>
+</html>
