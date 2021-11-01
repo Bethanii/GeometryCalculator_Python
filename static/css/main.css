@@ -1,15 +1,53 @@
 body {
-    background-color: powderblue;
+    background-color: black;
+	color: white;
   }
 
   h3 {
 	margin: 1em 0 0.5em 0;
-	color: #343434;
-	font-weight: bold;
-	font-family: 'Ultra', sans-serif;   
-	font-size: 38px;
-	line-height: 42px;
+	color: white;
+	font-weight: bold;   
+	font-size: 2.5em;
 	text-transform: uppercase;
-	text-shadow: 0 2px white, 0 3px #777;
     text-align: center;
+  }
+
+  h4
+  {
+	 margin-top: -0.5em;
+	color: white;  
+	font-size: 1.8em;
+    text-align: center;
+}
+.container 
+{
+	margin-left: 7em;
+	margin-top: 6em;
+	display:flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	width: 90%;
+}
+.button 
+{
+	display:flex;
+	justify-content: space-evenly;
+}
+.buttonInside
+{
+	margin-top: 9em;
+	flex-direction: row;
+	width: 15%;
+	height: 15%;
+	background-color: black;
+	border: white solid 0.4em;
+	color: white;
+	padding: 0.8em 0.5em;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+}
+.image
+{
+	width: 60%;
 }
